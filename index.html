@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spendwise — See all your spends in one place</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="home">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-icon">⏱️</span>
+        <span>Spendwise</span>
+      </div>
+      <div style="display:flex;gap:10px">
+        <a class="btn ghost" href="dashboard.html">Dashboard</a>
+        <a class="btn" href="upload.html">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container hero">
+    <h1>See all your bank and credit card spends <span style="color:var(--brand)">in one place</span>.</h1>
+    <p>Upload statements, get instant categorized insights — private and secure.</p>
+    <div class="cta">
+      <a class="btn" href="upload.html">Upload Statements →</a>
+    </div>
+
+    <div class="section">
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon">💳</div>
+          <h3>Multi-bank support</h3>
+          <p>Upload statements from all your banks and credit cards. HDFC, ICICI, SBI, and more.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Auto categorization</h3>
+          <p>Smart AI categorizes your transactions automatically. Food, travel, shopping, and more.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h3>Private & local processing</h3>
+          <p>Your data stays private. All processing happens securely on your device.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section banner card center">
+      <h2>Ready to get started?</h2>
+      <p>Take control of your finances today. Upload your statements and see where your money goes.</p>
+      <p><a class="btn" href="upload.html">Upload Your First Statement →</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Spendwise</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
